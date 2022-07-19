@@ -31,7 +31,7 @@
       }
     },
     {
-      "name": "Min gap",
+      "name": "S gap",
       "type": "spacing",
       "value": "4px",
       "category": "spacing",
