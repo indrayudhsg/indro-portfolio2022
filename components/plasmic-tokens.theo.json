@@ -1,5 +1,46 @@
 {
-  "props": [],
+  "props": [
+    {
+      "name": "Dark Grey",
+      "type": "color",
+      "value": "#282826",
+      "category": "color",
+      "meta": {
+        "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
+        "id": "6aiWEm_8x"
+      }
+    },
+    {
+      "name": "L gap",
+      "type": "spacing",
+      "value": "24px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
+        "id": "NtPsxxaV6"
+      }
+    },
+    {
+      "name": "M gap",
+      "type": "spacing",
+      "value": "12px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
+        "id": "7WDazeW0f"
+      }
+    },
+    {
+      "name": "Min gap",
+      "type": "spacing",
+      "value": "4px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
+        "id": "RmiiJFA_V"
+      }
+    }
+  ],
   "global": {
     "meta": {
       "source": "plasmic.app"

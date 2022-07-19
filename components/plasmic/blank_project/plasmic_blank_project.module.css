@@ -1,8 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&display=swap");
+
+.plasmic_tokens {
+  --token-6aiWEm_8x: #282826;
+  --plasmic-token-dark-grey: var(--token-6aiWEm_8x);
+  --token-RmiiJFA_V: 4px;
+  --plasmic-token-min-gap: var(--token-RmiiJFA_V);
+  --token-7WDazeW0f: 12px;
+  --plasmic-token-m-gap: var(--token-7WDazeW0f);
+  --token-NtPsxxaV6: 24px;
+  --plasmic-token-l-gap: var(--token-NtPsxxaV6);
+}
 
 .plasmic_default_styles {
-  --mixin-OfXSjraMYxQ2_font-family: "Inter";
-  --mixin-OfXSjraMYxQ2_font-size: 16px;
+  --mixin-OfXSjraMYxQ2_font-family: "Inconsolata";
+  --mixin-OfXSjraMYxQ2_font-size: 1em;
   --mixin-OfXSjraMYxQ2_font-weight: 400;
   --mixin-OfXSjraMYxQ2_font-style: normal;
   --mixin-OfXSjraMYxQ2_color: #535353;
@@ -15,10 +26,11 @@
   --mixin-OfXSjraMYxQ2_text-decoration-line: none;
   --mixin-OfXSjraMYxQ2_text-overflow: clip;
   --mixin-h8prqm8cV_S6_color: #000000;
-  --mixin-h8prqm8cV_S6_font-weight: 900;
-  --mixin-h8prqm8cV_S6_font-size: 72px;
+  --mixin-h8prqm8cV_S6_font-weight: 700;
+  --mixin-h8prqm8cV_S6_font-size: 5em;
+  --mixin-h8prqm8cV_S6_font-family: "Inconsolata";
   --mixin-h8prqm8cV_S6_line-height: 1;
-  --mixin-h8prqm8cV_S6_letter-spacing: -4px;
+  --mixin-h8prqm8cV_S6_letter-spacing: normal;
   --mixin-h8prqm8cV_S6_white-space: pre-wrap;
   --mixin-9m2DgDwac7He_font-family: "Inter";
   --mixin-9m2DgDwac7He_color: #000000;
@@ -458,6 +470,7 @@
   color: var(--mixin-h8prqm8cV_S6_color);
   font-weight: var(--mixin-h8prqm8cV_S6_font-weight);
   font-size: var(--mixin-h8prqm8cV_S6_font-size);
+  font-family: var(--mixin-h8prqm8cV_S6_font-family);
   line-height: var(--mixin-h8prqm8cV_S6_line-height);
   letter-spacing: var(--mixin-h8prqm8cV_S6_letter-spacing);
 }

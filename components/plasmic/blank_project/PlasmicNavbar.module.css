@@ -1,0 +1,201 @@
+.root {
+  flex-direction: column;
+  display: flex;
+  padding-right: 24px;
+  padding-left: 24px;
+  position: relative;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: calc(0px - 8px);
+  height: calc(100% + 8px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    max-width: 334px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    padding-right: 0px;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root > :global(.__wab_flex-container) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-width: 0;
+    margin-left: calc(0px - 8px);
+    width: calc(100% + 8px);
+    margin-top: calc(0px - 0px);
+    height: calc(100% + 0px);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root > :global(.__wab_flex-container) > *,
+  .root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .root > :global(.__wab_flex-container) > picture > img,
+  .root
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 8px;
+    margin-top: 0px;
+  }
+}
+.img {
+  object-fit: cover;
+  width: 101px;
+  height: 100px;
+  position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  flex-shrink: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img {
+    margin-right: 0px;
+    width: 73px;
+    height: 79px;
+    flex-shrink: 0;
+  }
+}
+.freeBox {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 0;
+  margin-top: calc(0px - var(--token-RmiiJFA_V));
+  height: calc(100% + var(--token-RmiiJFA_V));
+}
+.freeBox > :global(.__wab_flex-container) > *,
+.freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox > :global(.__wab_flex-container) > picture > img,
+.freeBox
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: var(--token-RmiiJFA_V);
+}
+.button__oo2Qg:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  align-self: auto;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .button__oo2Qg:global(.__wab_instance) {
+    width: auto;
+  }
+}
+.svg___6Rlql {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg___4RUgu {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.button__eusXm:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  align-self: auto;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .button__eusXm:global(.__wab_instance) {
+    width: auto;
+  }
+}
+.text__jaPoW {
+  font-size: 16px;
+  font-style: normal;
+  color: #1b1b18;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre;
+  user-select: text;
+  text-decoration-line: none !important;
+  text-overflow: clip !important;
+}
+.svg__ilBsm {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__uPaF {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.button__bUwpU:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  align-self: auto;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .button__bUwpU:global(.__wab_instance) {
+    width: auto;
+  }
+}
+.text__s0ECs {
+  font-size: 16px;
+  font-style: normal;
+  color: #1b1b18;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre;
+  user-select: text;
+  text-decoration-line: none !important;
+  text-overflow: clip !important;
+}
+.svg__jfMPt {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__mzuJf {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}

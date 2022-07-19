@@ -12,6 +12,9 @@
     "@plasmicapp/cli": "^0.1.184",
     "@plasmicapp/host": "^1.0.71",
     "@plasmicapp/react-web": "^0.2.102",
+    "@plasmicpkgs/antd": "^0.0.86",
+    "@plasmicpkgs/plasmic-nav": "^0.0.41",
+    "antd": "^4.21.7",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
