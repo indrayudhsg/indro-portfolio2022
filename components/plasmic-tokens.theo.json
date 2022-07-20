@@ -13,7 +13,7 @@
     {
       "name": "L gap",
       "type": "spacing",
-      "value": "24px",
+      "value": "20px",
       "category": "spacing",
       "meta": {
         "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
@@ -32,6 +32,26 @@
     },
     {
       "name": "S gap",
+      "type": "spacing",
+      "value": "8px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
+        "id": "NbjvYUzkE"
+      }
+    },
+    {
+      "name": "XL space",
+      "type": "spacing",
+      "value": "30px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
+        "id": "_80aCEKMY"
+      }
+    },
+    {
+      "name": "XS gap",
       "type": "spacing",
       "value": "4px",
       "category": "spacing",

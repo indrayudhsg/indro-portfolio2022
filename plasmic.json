@@ -48,7 +48,7 @@
           "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
           "renderModuleFilePath": "plasmic/blank_project/PlasmicFlyInn.jsx",
           "importSpec": {
-            "modulePath": "../pages/fly-inn.jsx"
+            "modulePath": "../pages/projects/fly-inn.jsx"
           },
           "cssFilePath": "plasmic/blank_project/PlasmicFlyInn.module.css",
           "scheme": "blackbox",

@@ -54,98 +54,55 @@ function PlasmicNavbar__RenderFunc(props) {
         sty.root
       )}
     >
-      <p.PlasmicImg
-        data-plasmic-name={"img"}
-        data-plasmic-override={overrides.img}
-        alt={""}
-        className={classNames(sty.img)}
-        displayHeight={
-          hasVariant(globalVariants, "screen", "mobileOnly") ? "79px" : "100px"
+      <Button
+        className={classNames("__wab_instance", sty.button__eusXm)}
+        color={"clear"}
+        size={
+          hasVariant(globalVariants, "screen", "mobileOnly")
+            ? "minimal"
+            : undefined
         }
-        displayMaxHeight={"none"}
-        displayMaxWidth={"none"}
-        displayMinHeight={"0"}
-        displayMinWidth={"0"}
-        displayWidth={
-          hasVariant(globalVariants, "screen", "mobileOnly") ? "73px" : "101px"
-        }
-        src={{
-          src: "/plasmic/blank_project/images/indroDpTransparentpng.png",
-          fullWidth: 2356,
-          fullHeight: 2356,
-          aspectRatio: undefined
-        }}
-      />
-
-      <p.Stack
-        as={"div"}
-        data-plasmic-name={"freeBox"}
-        data-plasmic-override={overrides.freeBox}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox)}
       >
-        <Button
-          className={classNames("__wab_instance", sty.button__oo2Qg)}
-          color={"clear"}
-          size={
-            hasVariant(globalVariants, "screen", "mobileOnly")
-              ? "minimal"
-              : undefined
-          }
+        <div
+          className={classNames(
+            projectcss.all,
+            projectcss.__wab_text,
+            sty.text__jaPoW
+          )}
         >
-          {"Contact"}
-        </Button>
+          {hasVariant(globalVariants, "screen", "mobileOnly")
+            ? "Projects"
+            : "Projects"}
+        </div>
+      </Button>
 
-        <Button
-          className={classNames("__wab_instance", sty.button__eusXm)}
-          color={"clear"}
-          size={
-            hasVariant(globalVariants, "screen", "mobileOnly")
-              ? "minimal"
-              : undefined
-          }
+      <Button
+        className={classNames("__wab_instance", sty.button__aJssZ)}
+        color={"clear"}
+        size={
+          hasVariant(globalVariants, "screen", "mobileOnly")
+            ? "minimal"
+            : undefined
+        }
+      >
+        <div
+          className={classNames(
+            projectcss.all,
+            projectcss.__wab_text,
+            sty.text__nk4Bl
+          )}
         >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__jaPoW
-            )}
-          >
-            {hasVariant(globalVariants, "screen", "mobileOnly")
-              ? "Projects"
-              : "Projects"}
-          </div>
-        </Button>
-
-        <Button
-          className={classNames("__wab_instance", sty.button__bUwpU)}
-          color={"clear"}
-          size={
-            hasVariant(globalVariants, "screen", "mobileOnly")
-              ? "minimal"
-              : undefined
-          }
-        >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__s0ECs
-            )}
-          >
-            {"Features"}
-          </div>
-        </Button>
-      </p.Stack>
+          {hasVariant(globalVariants, "screen", "mobileOnly")
+            ? "About"
+            : "About"}
+        </div>
+      </Button>
     </p.Stack>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "freeBox"],
-  img: ["img"],
-  freeBox: ["freeBox"]
+  root: ["root"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -182,8 +139,6 @@ export const PlasmicNavbar = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    img: makeNodeComponent("img"),
-    freeBox: makeNodeComponent("freeBox"),
     // Metadata about props expected for PlasmicNavbar
     internalVariantProps: PlasmicNavbar__VariantProps,
     internalArgProps: PlasmicNavbar__ArgProps

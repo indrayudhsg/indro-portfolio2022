@@ -380,6 +380,12 @@ function PlasmicButton__RenderFunc(props) {
               "showStartIcon"
             ),
 
+            [sty.slotTargetChildrensize_compact]: hasVariant(
+              variants,
+              "size",
+              "compact"
+            ),
+
             [sty.slotTargetChildrensize_minimal]: hasVariant(
               variants,
               "size",

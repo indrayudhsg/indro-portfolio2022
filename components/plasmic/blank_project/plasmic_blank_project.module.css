@@ -1,14 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700&display=swap");
 
 .plasmic_tokens {
   --token-6aiWEm_8x: #282826;
   --plasmic-token-dark-grey: var(--token-6aiWEm_8x);
   --token-RmiiJFA_V: 4px;
-  --plasmic-token-s-gap: var(--token-RmiiJFA_V);
+  --plasmic-token-xs-gap: var(--token-RmiiJFA_V);
+  --token-NbjvYUzkE: 8px;
+  --plasmic-token-s-gap: var(--token-NbjvYUzkE);
   --token-7WDazeW0f: 12px;
   --plasmic-token-m-gap: var(--token-7WDazeW0f);
-  --token-NtPsxxaV6: 24px;
+  --token-NtPsxxaV6: 20px;
   --plasmic-token-l-gap: var(--token-NtPsxxaV6);
+  --token-_80aCEKMY: 30px;
+  --plasmic-token-xl-space: var(--token-_80aCEKMY);
 }
 
 .plasmic_default_styles {

@@ -14,12 +14,9 @@ import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: lbT57O6QquH/component
-import Button from "../../Button"; // plasmic-import: aL3vzWiqlgO/component
-import { useScreenVariants as useScreenVariantscgDYbzl4SPr0V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CgDYbzl4SPr0V/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: xgndtx1wAp1Kt3H67Xxeiq/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: z5EDbolSaWhr/css
@@ -33,10 +30,6 @@ function PlasmicHomepage__RenderFunc(props) {
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = args;
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantscgDYbzl4SPr0V()
-  });
-
   return (
     <React.Fragment>
       <style>{`
@@ -63,119 +56,47 @@ function PlasmicHomepage__RenderFunc(props) {
           )}
         >
           <div className={classNames(projectcss.all, sty.freeBox__kiMwh)}>
+            <Navbar
+              data-plasmic-name={"navbar"}
+              data-plasmic-override={overrides.navbar}
+              className={classNames("__wab_instance", sty.navbar)}
+            />
+
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___2Do16)}
+              className={classNames(projectcss.all, sty.freeBox__y0LNf)}
             >
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___8VB3)}
+              <h1
+                data-plasmic-name={"h1"}
+                data-plasmic-override={overrides.h1}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1
+                )}
               >
-                <Navbar
-                  data-plasmic-name={"navbar"}
-                  data-plasmic-override={overrides.navbar}
-                  className={classNames("__wab_instance", sty.navbar)}
-                />
+                {"Hi! I'm Indrayudh"}
+              </h1>
 
-                {false ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__orkct)}
-                  >
-                    <button
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.button,
-                        projectcss.__wab_text,
-                        sty.button__x1AOi
-                      )}
-                    >
-                      {"Sign up"}
-                    </button>
-
-                    {true ? (
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__cron1
-                        )}
-                        color={"clear"}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___7ORbT
-                          )}
-                        >
-                          {"Log in"}
-                        </div>
-                      </Button>
-                    ) : null}
-                  </div>
-                ) : null}
-              </p.Stack>
-
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__y0LNf)}
+              <div
+                data-plasmic-name={"text"}
+                data-plasmic-override={overrides.text}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text
+                )}
               >
-                <h1
-                  data-plasmic-name={"h1"}
-                  data-plasmic-override={overrides.h1}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1
-                  )}
-                >
-                  {"Welcome to your first page."}
-                </h1>
+                {"dgg"}
+              </div>
 
+              <div className={classNames(projectcss.all, sty.freeBox__qifUe)}>
                 <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__pUt2K
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>
-                      {
-                        "If you haven't already done so, go back and learn the basics by going through the Plasmic Levels tutorial.\n\nIt's always easier to start from examples! Add a new page using a template—do this from the list of pages in the top left (the gray + button).\n\nOr press the big blue + button to start dragging items into this page.\n\nIntegrate this project into your codebase—press the "
-                      }
-                    </React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ fontWeight: 700 }}
-                    >
-                      {"Code"}
-                    </span>
-                    <React.Fragment>
-                      {
-                        " button in the top right and follow the quickstart instructions.\n\nJoin our Slack community (icon in bottom left) for help any time."
-                      }
-                    </React.Fragment>
-                  </React.Fragment>
-                </div>
-
-                <div className={classNames(projectcss.all, sty.freeBox__qifUe)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__fDrS4)}
-                  />
-
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__tp1W)}
-                  />
-
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__tCHt)}
-                  />
-                </div>
-              </p.Stack>
+                  className={classNames(projectcss.all, sty.freeBox__fDrS4)}
+                />
+              </div>
             </p.Stack>
           </div>
         </p.Stack>
@@ -185,9 +106,10 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbar", "h1"],
+  root: ["root", "navbar", "h1", "text"],
   navbar: ["navbar"],
-  h1: ["h1"]
+  h1: ["h1"],
+  text: ["text"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -226,6 +148,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
     h1: makeNodeComponent("h1"),
+    text: makeNodeComponent("text"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps
