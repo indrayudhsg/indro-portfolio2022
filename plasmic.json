@@ -42,19 +42,6 @@
           "componentType": "page"
         },
         {
-          "id": "sViv_rn0Ze",
-          "name": "FlyInn",
-          "type": "managed",
-          "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
-          "renderModuleFilePath": "plasmic/blank_project/PlasmicFlyInn.jsx",
-          "importSpec": {
-            "modulePath": "../pages/projects/fly-inn.jsx"
-          },
-          "cssFilePath": "plasmic/blank_project/PlasmicFlyInn.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "aL3vzWiqlgO",
           "name": "Button",
           "type": "managed",
@@ -400,7 +387,8 @@
           "name": "StrapiCredentialsProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-strapi"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "5dGW8Awro3qq8Hh5MveXLP",
@@ -419,7 +407,8 @@
           "name": "LottieWrapper",
           "componentImportPath": "@plasmicpkgs/lottie-react"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "8PtdGodUbexNYgkuyBUcWu",
@@ -438,7 +427,8 @@
           "name": "EmbedCss",
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "hjKYmYi6HMwK6TRyk7ew5R",
@@ -482,7 +472,8 @@
           "name": "CmsQueryRepeater",
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "r3ASNrnyvLLLAtDvzUioQ",
@@ -501,7 +492,8 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -520,7 +512,8 @@
           "name": "YouTube",
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -539,7 +532,8 @@
           "name": "Reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -568,7 +562,8 @@
           "name": "Embed",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
