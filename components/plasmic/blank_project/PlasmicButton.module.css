@@ -2,20 +2,14 @@
   flex-direction: row;
   display: flex;
   position: relative;
-  background: none;
-  border-top-width: 0px;
-  border-right-width: 0px;
-  border-left-width: 0px;
   cursor: pointer;
   transition-property: border;
   transition-duration: 0.1s;
-  border-top-style: none;
-  border-right-style: none;
-  border-left-style: none;
   transform: perspective(0px);
   transform-origin: -100% -100%;
   padding: var(--token-NbjvYUzkE) var(--token-7WDazeW0f) var(--token-RmiiJFA_V);
-  border-bottom: 4px dotted var(--token-6aiWEm_8x);
+  border-width: 0px;
+  border-style: none;
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -83,8 +77,7 @@
   padding-right: 20px;
   min-width: 100px;
   border-radius: 999px;
-  border-width: 4px;
-  border-style: dotted;
+  border-style: none;
 }
 .rootshape_round {
   border-radius: 50%;
@@ -113,16 +106,10 @@
 }
 .root:hover {
   background: none;
-  border-top-style: none;
-  border-right-style: none;
-  border-left-style: none;
-  border-top-width: 0px;
-  border-right-width: 0px;
-  border-left-width: 0px;
   cursor: pointer;
   flex-direction: row;
   padding: var(--token-NbjvYUzkE) var(--token-7WDazeW0f) var(--token-RmiiJFA_V);
-  border-bottom: 4px dotted var(--token-6aiWEm_8x);
+  border-style: none;
 }
 .root:hover > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -184,18 +171,11 @@
   background: #369eff;
 }
 .root:focus-within {
-  border-top-style: none;
-  border-right-style: none;
-  border-left-style: none;
-  border-top-width: 0px;
-  border-right-width: 0px;
-  border-left-width: 0px;
   background: none;
   cursor: pointer;
   flex-direction: row;
   outline: none;
   padding: var(--token-NbjvYUzkE) var(--token-7WDazeW0f) var(--token-RmiiJFA_V);
-  border-bottom: 4px dotted var(--token-6aiWEm_8x);
 }
 .root:focus-within > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -218,18 +198,17 @@
   margin-top: 0px;
 }
 .root___focusVisibleWithin {
+  border-bottom-color: var(--token-6aiWEm_8x);
   border-top-style: none;
   border-right-style: none;
+  border-bottom-style: dotted;
   border-left-style: none;
-  border-top-width: 0px;
-  border-right-width: 0px;
-  border-left-width: 0px;
   background: none;
   cursor: pointer;
   flex-direction: row;
   outline: none;
   padding: var(--token-NbjvYUzkE) var(--token-7WDazeW0f) var(--token-RmiiJFA_V);
-  border-bottom: 4px dotted var(--token-6aiWEm_8x);
+  border-width: 0em;
 }
 .root___focusVisibleWithin > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -256,16 +235,9 @@
 }
 .root:active {
   background: none;
-  border-top-style: none;
-  border-right-style: none;
-  border-left-style: none;
-  border-top-width: 0px;
-  border-right-width: 0px;
-  border-left-width: 0px;
   cursor: pointer;
   flex-direction: row;
   padding: var(--token-NbjvYUzkE) var(--token-7WDazeW0f) var(--token-RmiiJFA_V);
-  border-bottom: 4px dotted var(--token-6aiWEm_8x);
 }
 .root:active > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -336,6 +308,9 @@
 .startIconContainershowStartIcon {
   display: flex;
 }
+.root .startIconContainer___focusVisibleWithin {
+  outline: none;
+}
 .slotTargetStartIcon {
   color: #ededec;
 }
@@ -383,11 +358,18 @@
   flex-shrink: 0;
 }
 .contentContainer {
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
   display: flex;
   position: relative;
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
+  border-bottom: 4px dotted var(--token-6aiWEm_8x);
 }
 .root .contentContainer___focusVisibleWithin {
   outline: none;

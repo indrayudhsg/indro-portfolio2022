@@ -151,6 +151,8 @@ function PlasmicButton__RenderFunc(props) {
           data-plasmic-name={"startIconContainer"}
           data-plasmic-override={overrides.startIconContainer}
           className={classNames(projectcss.all, sty.startIconContainer, {
+            [sty.startIconContainer___focusVisibleWithin]:
+              triggers.focusVisibleWithin_root,
             [sty.startIconContainercolor_blue]: hasVariant(
               variants,
               "color",

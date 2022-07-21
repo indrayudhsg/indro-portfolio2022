@@ -13,11 +13,20 @@
     "@plasmicapp/host": "^1.0.71",
     "@plasmicapp/react-web": "^0.2.102",
     "@plasmicpkgs/antd": "^0.0.86",
+    "@plasmicpkgs/lottie-react": "^0.0.56",
+    "@plasmicpkgs/plasmic-basic-components": "^0.0.75",
+    "@plasmicpkgs/plasmic-cms": "^0.0.109",
+    "@plasmicpkgs/plasmic-embed-css": "^0.1.55",
     "@plasmicpkgs/plasmic-nav": "^0.0.41",
+    "@plasmicpkgs/plasmic-strapi": "^0.1.33",
+    "@plasmicpkgs/react-awesome-reveal": "^3.8.71",
+    "@plasmicpkgs/react-youtube": "^7.13.74",
     "antd": "^4.21.7",
     "next": "12.2.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "eslint": "8.19.0",

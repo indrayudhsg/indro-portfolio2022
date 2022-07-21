@@ -9,6 +9,7 @@
 // Plasmic Project: xgndtx1wAp1Kt3H67Xxeiq
 // Component: z5EDbolSaWhr
 import * as React from "react";
+import Head from "next/head";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
@@ -32,6 +33,22 @@ function PlasmicHomepage__RenderFunc(props) {
   const $props = args;
   return (
     <React.Fragment>
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{"Indrayudh's Portfolio"}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={"Indrayudh's Portfolio"}
+        />
+
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={"Indrayudh's Portfolio"}
+        />
+      </Head>
+
       <style>{`
         body {
           margin: 0;
@@ -55,50 +72,70 @@ function PlasmicHomepage__RenderFunc(props) {
             sty.root
           )}
         >
-          <div className={classNames(projectcss.all, sty.freeBox__kiMwh)}>
-            <Navbar
-              data-plasmic-name={"navbar"}
-              data-plasmic-override={overrides.navbar}
-              className={classNames("__wab_instance", sty.navbar)}
-            />
-
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__y0LNf)}
-            >
-              <h1
-                data-plasmic-name={"h1"}
-                data-plasmic-override={overrides.h1}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h1,
-                  projectcss.__wab_text,
-                  sty.h1
-                )}
-              >
-                {"Hi! I'm Indrayudh"}
-              </h1>
-
-              <div
-                data-plasmic-name={"text"}
-                data-plasmic-override={overrides.text}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text
-                )}
-              >
-                {"dgg"}
-              </div>
-
-              <div className={classNames(projectcss.all, sty.freeBox__qifUe)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__fDrS4)}
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__adwsA)}
+          >
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__ricju)}>
+                <Navbar
+                  data-plasmic-name={"navbar"}
+                  data-plasmic-override={overrides.navbar}
                 />
               </div>
-            </p.Stack>
-          </div>
+            ) : null}
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox___9T5R3)}>
+                <h1
+                  data-plasmic-name={"h1"}
+                  data-plasmic-override={overrides.h1}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1
+                  )}
+                >
+                  {"Hi! I'm Indrayudh"}
+                </h1>
+
+                <div
+                  data-plasmic-name={"text"}
+                  data-plasmic-override={overrides.text}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text
+                  )}
+                >
+                  {
+                    "In a world plagued with class conflict and an ever-growing climate crisis, I hope to integrate design practices into meaningful projects which could aid in creating positive change in existing social structures."
+                  }
+                </div>
+              </div>
+            ) : null}
+          </p.Stack>
+
+          <p.PlasmicImg
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
+            alt={""}
+            className={classNames(sty.img)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: "/plasmic/portfolio_website/images/wcs7Jpg.jpeg",
+              fullWidth: 4961,
+              fullHeight: 3508,
+              aspectRatio: undefined
+            }}
+          />
         </p.Stack>
       </div>
     </React.Fragment>
@@ -106,10 +143,11 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbar", "h1", "text"],
+  root: ["root", "navbar", "h1", "text", "img"],
   navbar: ["navbar"],
   h1: ["h1"],
-  text: ["text"]
+  text: ["text"],
+  img: ["img"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -149,6 +187,7 @@ export const PlasmicHomepage = Object.assign(
     navbar: makeNodeComponent("navbar"),
     h1: makeNodeComponent("h1"),
     text: makeNodeComponent("text"),
+    img: makeNodeComponent("img"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps

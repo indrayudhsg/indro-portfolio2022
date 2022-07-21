@@ -9,18 +9,25 @@
   --plasmic-token-s-gap: var(--token-NbjvYUzkE);
   --token-7WDazeW0f: 12px;
   --plasmic-token-m-gap: var(--token-7WDazeW0f);
-  --token-NtPsxxaV6: 20px;
+  --token-NtPsxxaV6: 24px;
   --plasmic-token-l-gap: var(--token-NtPsxxaV6);
   --token-_80aCEKMY: 30px;
   --plasmic-token-xl-space: var(--token-_80aCEKMY);
+  --token-Jx8cGv9Ff: #0070f3;
+  --plasmic-token-hyperlink: var(--token-Jx8cGv9Ff);
+  --token-jHN8hPGdk: 96px;
+  --plasmic-token-xxl: var(--token-jHN8hPGdk);
+  --token-fTdWWHCUb: #ffd700;
+  --plasmic-token-accent: var(--token-fTdWWHCUb);
 }
 
-.plasmic_default_styles {
+.plasmic_default_styles,
+.plasmic_default_styles:where(.global_unnamedGlobalGroupOfVariants_unnamedVariant) {
   --mixin-OfXSjraMYxQ2_font-family: "Inconsolata";
   --mixin-OfXSjraMYxQ2_font-size: 1em;
   --mixin-OfXSjraMYxQ2_font-weight: 400;
   --mixin-OfXSjraMYxQ2_font-style: normal;
-  --mixin-OfXSjraMYxQ2_color: #535353;
+  --mixin-OfXSjraMYxQ2_color: var(--token-6aiWEm_8x);
   --mixin-OfXSjraMYxQ2_text-align: left;
   --mixin-OfXSjraMYxQ2_text-transform: none;
   --mixin-OfXSjraMYxQ2_line-height: 1.5;
@@ -43,7 +50,14 @@
   --mixin-9m2DgDwac7He_letter-spacing: -1px;
   --mixin-9m2DgDwac7He_line-height: 1.1;
   --mixin-9m2DgDwac7He_white-space: pre-wrap;
-  --mixin-WFEze7OdWlKt_color: #0070f3;
+  --mixin-WFEze7OdWlKt_color: var(--token-Jx8cGv9Ff);
+  --mixin-WFEze7OdWlKt_border-bottom-width: 0.2em;
+  --mixin-WFEze7OdWlKt_border-bottom-style: dotted;
+  --mixin-WFEze7OdWlKt_border-bottom-color: var(--token-Jx8cGv9Ff);
+  --mixin-WFEze7OdWlKt_backdrop-filter: none;
+  --mixin-WFEze7OdWlKt_filter: none;
+  --mixin-WFEze7OdWlKt_font-family: "Inconsolata";
+  --mixin-WFEze7OdWlKt_text-decoration-line: none;
   --mixin-WFEze7OdWlKt_white-space: pre-wrap;
   --mixin-mKdpHfdQRL40_font-family: "Inter";
   --mixin-mKdpHfdQRL40_color: #000000;
@@ -496,6 +510,13 @@
 :where(.root_reset .__wab_expr_html_text a),
 :where(.root_reset.plasmic_default__a) {
   color: var(--mixin-WFEze7OdWlKt_color);
+  backdrop-filter: var(--mixin-WFEze7OdWlKt_backdrop-filter);
+  filter: var(--mixin-WFEze7OdWlKt_filter);
+  font-family: var(--mixin-WFEze7OdWlKt_font-family);
+  text-decoration-line: var(--mixin-WFEze7OdWlKt_text-decoration-line);
+  border-bottom: var(--mixin-WFEze7OdWlKt_border-bottom-width)
+    var(--mixin-WFEze7OdWlKt_border-bottom-style)
+    var(--mixin-WFEze7OdWlKt_border-bottom-color);
 }
 
 :where(.root_reset .plasmic_default__h3),
