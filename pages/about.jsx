@@ -3,32 +3,32 @@
 import * as React from "react";
 import GlobalContextsProvider from "../components/plasmic/portfolio_website/PlasmicGlobalContextsProvider";
 import { UnnamedGlobalGroupOfVariantsContext } from "../components/plasmic/portfolio_website/PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants";
-import { PlasmicIndex } from "../components/plasmic/portfolio_website/PlasmicIndex";
+import { PlasmicAbout } from "../components/plasmic/portfolio_website/PlasmicAbout";
 
-function Index() {
-  // Use PlasmicIndex to render this component as it was
+function About() {
+  // Use PlasmicAbout to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
-  // Props you can pass into PlasmicIndex are:
+  // Props you can pass into PlasmicAbout are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
   // 3. Overrides for any named node in the component to attach behavior and data,
   // 4. Props to set on the root node.
   //
-  // By default, PlasmicIndex is wrapped by your project's global
+  // By default, PlasmicAbout is wrapped by your project's global
   // variant context providers. These wrappers may be moved to
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
     <UnnamedGlobalGroupOfVariantsContext.Provider value={undefined}>
       <GlobalContextsProvider>
-        <PlasmicIndex />
+        <PlasmicAbout />
       </GlobalContextsProvider>
     </UnnamedGlobalGroupOfVariantsContext.Provider>
   );
 }
 
-export default Index;
+export default About;

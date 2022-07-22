@@ -1,6 +1,16 @@
 {
   "props": [
     {
+      "name": "Accent",
+      "type": "color",
+      "value": "#FFD700",
+      "category": "color",
+      "meta": {
+        "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
+        "id": "fTdWWHCUb"
+      }
+    },
+    {
       "name": "Dark Grey",
       "type": "color",
       "value": "#282826",
@@ -11,9 +21,19 @@
       }
     },
     {
+      "name": "Hyperlink",
+      "type": "color",
+      "value": "#0070F3",
+      "category": "color",
+      "meta": {
+        "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
+        "id": "Jx8cGv9Ff"
+      }
+    },
+    {
       "name": "L gap",
       "type": "spacing",
-      "value": "20px",
+      "value": "24px",
       "category": "spacing",
       "meta": {
         "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
@@ -58,6 +78,16 @@
       "meta": {
         "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
         "id": "RmiiJFA_V"
+      }
+    },
+    {
+      "name": "XXL",
+      "type": "spacing",
+      "value": "96px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "xgndtx1wAp1Kt3H67Xxeiq",
+        "id": "jHN8hPGdk"
       }
     }
   ],

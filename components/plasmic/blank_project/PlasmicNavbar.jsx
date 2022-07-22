@@ -12,7 +12,6 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -54,48 +53,19 @@ function PlasmicNavbar__RenderFunc(props) {
         sty.root
       )}
     >
-      <Button
-        className={classNames("__wab_instance", sty.button__eusXm)}
-        color={"clear"}
-        size={
-          hasVariant(globalVariants, "screen", "mobileOnly")
-            ? "minimal"
-            : undefined
-        }
-      >
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text__jaPoW
-          )}
-        >
-          {hasVariant(globalVariants, "screen", "mobileOnly")
-            ? "Projects"
-            : "Projects"}
-        </div>
+      <Button className={classNames("__wab_instance", sty.button__tpyBn)}>
+        {"Projects"}
+      </Button>
+
+      <Button className={classNames("__wab_instance", sty.button__caJvz)}>
+        {"Snippets"}
       </Button>
 
       <Button
-        className={classNames("__wab_instance", sty.button__aJssZ)}
-        color={"clear"}
-        size={
-          hasVariant(globalVariants, "screen", "mobileOnly")
-            ? "minimal"
-            : undefined
-        }
+        className={classNames("__wab_instance", sty.button__zmqJ)}
+        link={"/about"}
       >
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text__nk4Bl
-          )}
-        >
-          {hasVariant(globalVariants, "screen", "mobileOnly")
-            ? "About"
-            : "About"}
-        </div>
+        {"About"}
       </Button>
     </p.Stack>
   );

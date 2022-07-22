@@ -19,14 +19,14 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: lbT57O6QquH/component
 import "@plasmicapp/react-web/lib/plasmic.css";
-import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: xgndtx1wAp1Kt3H67Xxeiq/projectcss
-import sty from "./PlasmicHomepage.module.css"; // plasmic-import: z5EDbolSaWhr/css
+import projectcss from "../blank_project/plasmic_blank_project.module.css"; // plasmic-import: xgndtx1wAp1Kt3H67Xxeiq/projectcss
+import sty from "./PlasmicIndex.module.css"; // plasmic-import: z5EDbolSaWhr/css
 
-export const PlasmicHomepage__VariantProps = new Array();
+export const PlasmicIndex__VariantProps = new Array();
 
-export const PlasmicHomepage__ArgProps = new Array();
+export const PlasmicIndex__ArgProps = new Array();
 
-function PlasmicHomepage__RenderFunc(props) {
+function PlasmicIndex__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -89,7 +89,11 @@ function PlasmicHomepage__RenderFunc(props) {
             ) : null}
 
             {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox___9T5R3)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___9T5R3)}
+              >
                 <h1
                   data-plasmic-name={"h1"}
                   data-plasmic-override={overrides.h1}
@@ -116,29 +120,9 @@ function PlasmicHomepage__RenderFunc(props) {
                     "In a world plagued with class conflict and an ever-growing climate crisis, I hope to integrate design practices into meaningful projects which could aid in creating positive change in existing social structures."
                   }
                 </div>
-              </div>
+              </p.Stack>
             ) : null}
           </p.Stack>
-
-          <p.PlasmicImg
-            data-plasmic-name={"img"}
-            data-plasmic-override={overrides.img}
-            alt={""}
-            className={classNames(sty.img)}
-            displayHeight={"auto"}
-            displayMaxHeight={"none"}
-            displayMaxWidth={"100%"}
-            displayMinHeight={"0"}
-            displayMinWidth={"0"}
-            displayWidth={"auto"}
-            loading={"lazy"}
-            src={{
-              src: "/plasmic/portfolio_website/images/wcs7Jpg.jpeg",
-              fullWidth: 4961,
-              fullHeight: 3508,
-              aspectRatio: undefined
-            }}
-          />
         </p.Stack>
       </div>
     </React.Fragment>
@@ -146,11 +130,10 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbar", "h1", "text", "img"],
+  root: ["root", "navbar", "h1", "text"],
   navbar: ["navbar"],
   h1: ["h1"],
-  text: ["text"],
-  img: ["img"]
+  text: ["text"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -160,14 +143,14 @@ function makeNodeComponent(nodeName) {
         deriveRenderOpts(props, {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
-          internalArgPropNames: PlasmicHomepage__ArgProps,
-          internalVariantPropNames: PlasmicHomepage__VariantProps
+          internalArgPropNames: PlasmicIndex__ArgProps,
+          internalVariantPropNames: PlasmicIndex__VariantProps
         }),
 
       [props, nodeName]
     );
 
-    return PlasmicHomepage__RenderFunc({
+    return PlasmicIndex__RenderFunc({
       variants,
       args,
       overrides,
@@ -175,27 +158,26 @@ function makeNodeComponent(nodeName) {
     });
   };
   if (nodeName === "root") {
-    func.displayName = "PlasmicHomepage";
+    func.displayName = "PlasmicIndex";
   } else {
-    func.displayName = `PlasmicHomepage.${nodeName}`;
+    func.displayName = `PlasmicIndex.${nodeName}`;
   }
   return func;
 }
 
-export const PlasmicHomepage = Object.assign(
-  // Top-level PlasmicHomepage renders the root element
+export const PlasmicIndex = Object.assign(
+  // Top-level PlasmicIndex renders the root element
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
     h1: makeNodeComponent("h1"),
     text: makeNodeComponent("text"),
-    img: makeNodeComponent("img"),
-    // Metadata about props expected for PlasmicHomepage
-    internalVariantProps: PlasmicHomepage__VariantProps,
-    internalArgProps: PlasmicHomepage__ArgProps
+    // Metadata about props expected for PlasmicIndex
+    internalVariantProps: PlasmicIndex__VariantProps,
+    internalArgProps: PlasmicIndex__ArgProps
   }
 );
 
-export default PlasmicHomepage;
+export default PlasmicIndex;
 /* prettier-ignore-end */
